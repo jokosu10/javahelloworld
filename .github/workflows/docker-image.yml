@@ -19,9 +19,9 @@ jobs:
     - name: Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: artemtech/javahelloworld
+        image: jokosusilo10/javahelloworld
         tags: latest
         registry: docker.io
         dockerfile: Dockerfile
-        username: artemtech
+        username: jokosusilo10
         password: ${{ secrets.DOCKER_TOKEN }}
